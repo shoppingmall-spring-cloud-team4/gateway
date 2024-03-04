@@ -1,0 +1,11 @@
+### 로그인
+POST http://localhost:8000/api/account/login
+
+{
+    "id":"nhnacademy",
+    "password":"nhnacademy12345*"
+}
+
+### 회원조회
+GET http://localhost:8000/api/account/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJuaG5hY2FkZW15IiwiaWF0IjoxNzA5MTg4MzA5LCJleHAiOjE3MDkxOTE5MDl9.CfSoo5v9G0YuJonwp27sIloWjBxGSVVwNGR60pHet7k
