@@ -1,5 +1,12 @@
 ### 로그인
-POST http://localhost:8000/api/account/login
+POST http://localhost:8000/login
+
+{
+    "id":"admin",
+    "password":"123"
+}
+### 로그인
+POST http://localhost:8000/login
 
 {
     "id":"nhnacademy",
@@ -8,4 +15,4 @@ POST http://localhost:8000/api/account/login
 
 ### 회원조회
 GET http://localhost:8000/api/account/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJuaG5hY2FkZW15IiwiaWF0IjoxNzA5MTg4MzA5LCJleHAiOjE3MDkxOTE5MDl9.CfSoo5v9G0YuJonwp27sIloWjBxGSVVwNGR60pHet7k
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWZyZXNoLXRva2VuIiwidXNlcklkIjoiYWRtaW4iLCJyb2xlcyI6IltST0xFX1VTRVJdIiwiaWF0IjoxNzA5Njk5Mzc0LCJleHAiOjE3MDk3ODU3NzR9.bq9X9WvVncLRuyHjdnFAkVpjKA0l7yb0Ove9MJWyPF0
