@@ -41,6 +41,9 @@ public class RouteLocatorConfig {
                 .route("login",p->p.path("/login")
                         .uri("http://localhost:8100")
                 )
+                .route("refresh",p-> p.path("/auth/refresh")
+                        .uri("http://localhost:8100")
+                )
                 //TODO#1-1 localhost:8000/api/account/** 요청은 -> localhost:8100/api/account/** 라우팅 됩니다.
                 .route("account-api", p->p.path("/api/account/**")
                         //TODO#1-3 jwt를 검증할 Filter를 등록합니다

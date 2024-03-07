@@ -47,6 +47,8 @@ public class JwtUtils {
     }
 
     public boolean isValidateToken(String token) {
+        log.info("{}",token);
+
         try {
             Jwts.parser().setSigningKey(jwtValue).parseClaimsJws(token);
             return true;
